@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Blog</title>
+     <!-- Google Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!-- DaisyUi CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+   .font-lexend {
+      font-family: "Lexend", sans-serif;
+   }
+  </style>
+</head>
+<body class="font-lexend">
+
+     <!-- HEadar section starts -->
+    <header class="p-4 bg-[#FAEDD1] text-gray-800 ">
+        <div class="container mx-auto flex flex-col items-center justify-between h-auto space-y-4 sm:flex-row sm:space-y-0 sm:h-12">
+          
+          <!-- Blog Button -->
+          <a href="index.html" class="bg-lime-300 text-black py-2 px-4 rounded-lg font-semibold text-lg hover:bg-lime-400 transition duration-300 ease-in-out">
+            Home
+          </a>
+    
+          <!-- Donate Bangladesh Section -->
+          <div class="flex items-center space-x-2">
+            <img src="assets/logo.png" alt="Donate Icon" class="w-6 h-6">
+            <span class="font-semibold text-xl">Donate Bangladesh</span>
+          </div>
+    
+          <!-- Currency and Amount Display -->
+          <div class="flex items-center space-x-2">
+            <img src="assets/coin.png" alt="Coin Icon" class="w-6 h-6">
+         <p>
+          <span id="current-amount" class="font-semibold text-xl text-[#111111B3]">25000</span> BDT
+         </p>
+          </div>
+        </div>
+      </header>
+      <!-- Header section End -->
+       
+                <!-- FAQ Title -->
+             
+          <div class="ml-14 mt-10 text-4xl font-bold flex space-x-4">
+            <h1>Important FAQ</h1>
+            <img src="assets/questioicon.png" alt="question icon">
+          </div>
+            
+          <!-- class="w-full md:w-1/2 p-4" -->
+          <div class="ml-14 mt-10 space-y-6 max-w-7xl">
+            <!-- FAQ Item 1 -->
+            <details class="group border rounded-lg bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
+              >
+                <h2 class="font-medium">What is The Document Object Model(DOM)?</h2>
+          
+                <svg
+                  class="w-5 h-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 leading-relaxed text-gray-700">
+                The Document Object Model (DOM) is a programming interface that represents the structure of an HTML or XML document as a tree of objects. Each part of the document, such as elements, attributes, and text, is represented as a node in this tree. The DOM allows programming languages, like JavaScript, to interact with, manipulate, and change the content, structure, and style of a webpage dynamically.
+
+
+              </p>
+            </details>
+          
+            <!-- FAQ Item 2 -->
+            <details class="group border rounded-lg bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
+              >
+                <h2 class="font-medium">How do you select an element from the DOM?</h2>
+          
+                <svg
+                  class="w-5 h-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 leading-relaxed text-gray-700">
+               <p> 1.const element = document.getElementById('myId');</p> <br>
+               <p>2.const elements = document.getElementsByClassName('myClass');</p> <br>
+               <p>3.const elements = document.getElementsByTagName('div');</p><br>
+               <p> 4.const element = document.querySelector('.myClass'); </p><br>
+              <p> 5.const elements = document.querySelectorAll('div.myClass');</p><br>
+              </p>
+            </details>
+          
+            <!-- FAQ Item 3 -->
+            <details class="group border rounded-lg bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
+              >
+                <h2 class="font-medium">What is event delegation in the context of the DOM,and why is it useful?</h2>
+          
+                <svg
+                  class="w-5 h-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 leading-relaxed text-gray-700">
+                IEvent delegation is a technique in JavaScript where a single event listener is attached to a parent element instead of multiple listeners on child elements. When an event occurs on a child element, it bubbles up to the parent, allowing the parent’s listener to handle it.
+              </p>
+            </details>
+          
+            <!-- FAQ Item 4 -->
+            <details class="group border rounded-lg bg-gray-50 p-4 [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
+              >
+                <h2 class="font-medium">How do you manipulate an element's atributes and styles using the DOM?</h2>
+          
+                <svg
+                  class="w-5 h-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 leading-relaxed text-gray-700">
+                The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set
+              </p>
+            </details>
+          </div>
+</body>
+</html>
