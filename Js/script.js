@@ -33,6 +33,22 @@
 
           // Update the displayed current amount
           currentAmountElement.innerText = newAmount;
+ // Create a transaction entry for history
+const historyEntry = document.createElement('div');
+historyEntry.classList.add('history-item', 'my-2', 'p-2', 'border', 'rounded', 'shadow');
+
+// Get the current date and format it as requested
+const formattedDate = `Date : ${new Date().toString()}`; 
+// Set the inner HTML for the transaction entry
+historyEntry.innerHTML = `
+    <strong>${donationAmount} Taka is Donated for Flood at Noakhali, Bangladesh</strong>
+   
+    <p>${formattedDate}</p>
+`;
+
+// Append the new transaction to the transaction container
+document.getElementById('transaction-container').appendChild(historyEntry);
+
 
             // Update the donation display button with the new donation amount
             document.getElementById('donated-amount').innerText = donationAmount;
@@ -70,6 +86,23 @@
 
             currentAmountElement.innerText = newCurrentAmount; // Update current amount
             currentDonatedAmountElement.innerText = newDonatedAmount; // Update donated amount
+            // Create a transaction entry for history
+const historyEntry = document.createElement('div');
+historyEntry.classList.add('history-item', 'my-2', 'p-2', 'border', 'rounded', 'shadow');
+
+// Get the current date and format it as requested
+const formattedDate = `Date : ${new Date().toString()}`; 
+
+// Set the inner HTML for the transaction entry
+historyEntry.innerHTML = `
+    <strong>${donationAmount} Taka is Donated for Flood Food Relief in Feni, Bangladesh</strong>
+    
+    <p>${formattedDate}</p>
+`;
+
+// Append the new transaction to the transaction container
+document.getElementById('transaction-container').appendChild(historyEntry);
+
 
             // Show the modal
             document.getElementById('donationModal').classList.remove('hidden');
@@ -103,6 +136,24 @@
           const newDonatedAmount = currentDonatedAmount + donationAmount; 
           currentAmountElement.innerText = newCurrentAmount; // Update current amount
           currentDonatedAmountElement.innerText = newDonatedAmount; // Update donated amount
+         
+          // Create a transaction entry for history
+const historyEntry = document.createElement('div');
+historyEntry.classList.add('history-item', 'my-2', 'p-2', 'border', 'rounded', 'shadow');
+
+// Get the current date and format it as requested
+const formattedDate = `Date : ${new Date().toString()}`; 
+
+// Set the inner HTML for the transaction entry
+historyEntry.innerHTML = `
+    <strong>${donationAmount} Taka is Donated for Aid For Injured Quata Movement, Bangladesh</strong>
+    
+    <p>${formattedDate}</p>
+`;
+
+// Append the new transaction to the transaction container
+document.getElementById('transaction-container').appendChild(historyEntry);
+
 
           // Show the modal
           document.getElementById('donationModal').classList.remove('hidden');
